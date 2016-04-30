@@ -1,0 +1,15 @@
+>> cw01
+A =
+
+    1   43   45    2   14
+
+B =
+
+    6   12   45    1    9
+
+tablicowe
+      6    516   2025      2    126
+macierzowe
+error: cw01: operator *: nonconformant arguments (op1 is 1x5, op2 is 1x5)
+error: called from
+    cw01 at line 10 column 2
