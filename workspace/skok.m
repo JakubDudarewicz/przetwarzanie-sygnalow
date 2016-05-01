@@ -3,10 +3,10 @@ function skok(varargin) %(duration, begin 1, end 1, begin 2, end 2...
 k = 2;
 l=1;
 figure;
-r = ceil((nargin-1)/6);
+r = ceil((nargin-1)/4);
 dur = varargin{1};
 
-for i = 0:((nargin-1)/2)
+for i = 1:((nargin-1)/2)
   be = varargin{k};
   en = varargin{k+1};
   
@@ -18,7 +18,7 @@ for i = 0:((nargin-1)/2)
     be += 1;
   end
   
-  subplot(r, 3, l);
+  subplot(r, 2, l);
   plot(a, '.');
   axis([0, dur, -0.5, 1.5]);
   printf("bound %d - %d\n", varargin{k}, varargin{k+1});
