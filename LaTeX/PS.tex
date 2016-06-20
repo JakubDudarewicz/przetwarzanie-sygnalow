@@ -1,0 +1,549 @@
+\documentclass[12pt,titlepage]{report}
+
+%polskie znaki
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% grafika 
+\usepackage{graphicx}
+\usepackage{subfig} 
+\usepackage{multicol}
+%\usepackage{float} - bez tego można ustawić 2 obrazki obok siebie
+
+\usepackage[polish]{babel}
+\usepackage{lmodern} %czcionki
+\selectlanguage{polish} 
+ %zajebiaszcze formatownanie całej strony!
+ \usepackage[a4paper,left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm,includefoot=false,includehead=false]{geometry} 
+ \usepackage{color} %kolorowy tekst
+ 
+\usepackage[final]{pdfpages}
+
+\title{Przetwarzanie Sygnałów}
+\author{Jakub Dudarewicz}
+\date{Semestr letni, 2016}
+
+\begin{document}
+
+\begin{titlepage}
+	\maketitle
+\end{titlepage}
+	
+%definicja formatowania nagłówków
+	\def\thesection{Zadanie \arabic{section}.\Large}
+	\def\thesubsection{Zadanie \arabic{section}.\arabic{subsection}\normalsize}
+	\def\theparagraph{\normalsize}%doesnotwork
+\section{Instrukcja 0}
+\subsection{Operacje tablicowe i macierzowe}
+
+Wynik operacji mnożenia macierzowego i tablicowego:
+\begin{multicols}{2}
+	{
+		\small
+		\begin{verbatim}
+		A =		
+		1   43   45
+		
+		B =		
+		6   12   45
+		2    4   56
+		12    3    1
+		
+		tablicowe
+		6    516   2025
+		2    172   2520
+		12    129     45
+		
+		macierzowe
+		632    319   2498
+		\end{verbatim}
+	}
+\end{multicols}
+Operacje te są fundamentalnie od siebie różne
+
+\subsection{Próbkowanie przebiegu sinusoidalnego}
+M-plik użyty do generacji wykresów:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		% probkowanie sinusa
+		
+		n=10; %długość obserwacji
+		k=100; %liczba próbek
+		t=[1:k];
+		
+		H = figure;
+		
+		m=500;
+		a=sin(2*pi*n*t/m);
+		subplot(221);
+		plot(a);
+		title("500");
+		
+		m=200;
+		a=sin(2*pi*n*(t/m));
+		subplot(222);
+		plot(a);
+		title("200");
+		
+		m=100;
+		a=sin(2*pi*n*t/m);
+		subplot(223);
+		plot(a);
+		title("100");
+		
+		m=20;
+		a=sin(2*pi*n*t/m);
+		subplot(224);
+		plot(a);
+		title("20");
+		
+		clear;
+		\end{verbatim}
+	}
+\end{multicols}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw03_output}
+	\caption{Przebieg sinusoidalny próbkowany z różnymi częstotliwościami}
+\end{figure}
+Liczba zarejestrowanych okresów i rozdzielczość wynika z częstotliwości próbkowania. W tym zadaniu nie przekształcam dziedziny sygnału do czasu.
+\newpage
+
+\subsection{Skok jednostkowy}
+
+M-plik użty do genracji wykresów:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		%skok jednostkowy
+		
+		be = 10;
+		en = 30;
+		dur = 100;
+		
+		a = zeros(dur,1);
+		
+		for i = be:en
+		a(be, 1) = 1;
+		be = be + 1;
+		end
+		
+		figure;
+		plot(a);
+		axis([0, 100, -0.5, 1.5]);
+		title("skok jednostkowy");
+		\end{verbatim}
+	}
+\end{multicols}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.5]{../cw04_output}
+	\caption{Przykładowy wydruk skoku jednostkowego}
+\end{figure}
+
+\subsection{Skok jednostkowy, użycie varargin}
+M-plik użyty do generowania wykresów:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		function skok(varargin) %(duration,
+		begin 1, end 1, begin 2, end 2...
+		
+		k = 2;
+		l=1;
+		figure;
+		r = ceil((nargin-1)/4);
+		dur = varargin{1};
+		
+		for i = 1:((nargin-1)/2)
+		be = varargin{k};
+		en = varargin{k+1};
+		
+		
+		a = zeros(dur,1);
+		
+		for j = be:en
+		a(be, 1) = 1;
+		be += 1;
+		end
+		
+		subplot(r, 2, l);
+		plot(a, '.');
+		axis([0, dur, -0.5, 1.5]);
+		printf("bound %d - %d\n", varargin{k},
+		varargin{k+1});
+		
+		if(k+1<(nargin-1))
+		k=k+2;
+		endif
+		l=l+1;
+		end
+		
+		endfunction
+		\end{verbatim}
+	}
+\end{multicols}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.5]{../cw05_output}
+	\caption{Przykładowy wydruk dla siedmiu argumentów}
+\end{figure}
+Funkcja varargin i wszystkie jej towarzyszące są bardzo użyteczne, bo pozwalają na napisanie bardziej uniwersalnej funkcji.
+\newpage
+
+\subsection{Przebieg wykładniczy zespolony}
+M-plik użyty do generacji wykresów funkcji $f\left(x\right)={e}^{xi}$:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		%przebieg wykładniczy zespolony
+		
+		t=[0:0.1:2*pi];
+		
+		zesp=e.^(t.*j);
+		rzecz=real(zesp);
+		uroj=imag(zesp);
+		modul=abs(zesp);
+		faza=angle(zesp);
+		
+		figure
+		
+		subplot(121)
+		plot(zesp)
+		title("plaszczyzna zespolona")
+		subplot(243)
+		plot(modul)
+		title("modul")
+		subplot(244)
+		plot(rzecz)
+		title("skladnik rzeczywisty")
+		subplot(247)
+		plot(uroj)
+		title("skladnik urojony")
+		subplot(248)
+		plot(faza)
+		title("kat fazowy")
+		\end{verbatim}
+	}
+\end{multicols}
+
+\begin{figure}[!h]
+	\centering
+	\subfloat[$0i - \pi i$]{
+		\includegraphics[scale=0.5]{../cw06_output}
+	}
+	\par
+	\subfloat[$0i - 2\pi i$]{
+		\includegraphics[scale=0.5]{../cw06_output_2pi}
+	}
+	\caption{Zespolone przebiegi wykładnicze dla dwóch zakresów zmiennej zespolonej}
+\end{figure}
+Z powyższych wykresów połączenie funkcji wykładniczej zespolonej z funkcjami trygonometrycznymi jest oczywiste. Zrozumiała też staje się słynna Tożsamość Eulera ${e}^{\pi i} + 1 = 0$.
+\newpage
+
+\subsection{Modulowanie przebiegu sinusoidalnego}
+M-plik użyty do generacji wykresów:
+\begin{multicols}{2}
+	{
+		\tiny
+		\begin{verbatim}
+		%modulowanie sinusa
+		
+		n=1; %długość obserwacji
+		k=1000; %liczba próbek
+		t=[1:k]; %probki
+		m=500; %czestotliwosc obserwacji
+		
+		a=sin(2*pi*n*t/m);
+		b=(0.5).*sin((10*2*pi*n*t/m)+pi);
+		
+		c=a.*b;
+		
+		figure
+		
+		subplot(121)
+		plot(c)
+		subplot(222)
+		plot(a)
+		subplot(224)
+		plot(b)
+		\end{verbatim}
+	}
+\end{multicols}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.4]{../cw07_output}
+	\caption{Z lewej - sygnał zmodulowany, z prawej - sygnały wyjściowe}
+\end{figure}
+Modulacja osiągana jest poprzez pomnożenie tablicowe przez siebie dwóch sygnałów.
+\newpage
+
+\section{Instrukcja 1}
+\subsection{Generowanie przebiegów sinusoidalnych o pulsacji znormalizowanej}
+M-plik użyty do generacji wykresów:
+\begin{multicols}{2}
+	{
+		\tiny
+		\begin{verbatim}
+		n=[0:127];
+		
+		xa=sin((pi/20)*n);
+		xb=sin((pi/4)*n);
+		xc=sin((pi/2)*n);
+		xd=sin((pi/2+2*pi)*n);
+		xe=sin((pi/2+0.01)*n);
+		
+		subplot(131)
+		stem(xa)
+		title('\pi/20')
+		subplot(232)
+		stem(xb)
+		title('\pi/4')
+		subplot(233)
+		stem(xc)
+		title('\pi/2')
+		subplot(235)
+		stem(xd)
+		title('\pi/20 + 2\pi')
+		subplot(236)
+		stem(xe)
+		title('\pi/20 + 0.01')
+		\end{verbatim}
+	}
+\end{multicols}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw11_output}
+	\caption{Przebiegi generowane dla różnych pulsacji.}
+\end{figure}
+Zbyt duża częstotliwość powoduje niedokładne rejestrowanie przebiegu.
+\newpage
+
+\subsection{Generowanie przebiegów sinusoidalnych próbkowanych z różną częstotliwością}
+M-plik użyty do generacji wykresów:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		%sampling frequency
+		fsa=4000;
+		fsb=4020;
+		fsc=8000;
+		fsd=19000;
+		fse=44000;
+		
+		%samples vector
+		n=[0:127];
+		
+		%signal frequency
+		f=2000;
+		
+		%time vectors
+		ta=n/fsa;
+		tb=n/fsb;
+		tc=n/fsc;
+		td=n/fsd;
+		te=n/fse;
+		
+		
+		%signal model
+		xa=sin(2*pi*f*ta);
+		xb=sin(2*pi*f*tb);
+		xc=sin(2*pi*f*tc);
+		xd=sin(2*pi*f*td);
+		xe=sin(2*pi*f*te);
+		
+		subplot(131)
+		stem(ta, xa)
+		title('sampling rate 4000Hz')
+		subplot(232)
+		stem(tb, xb)
+		title('sampling rate 4020Hz')
+		subplot(233)
+		stem(tc, xc)
+		title('sampling rate 8000Hz')
+		subplot(235)
+		stem(td, xd)
+		title('sampling rate 19000Hz')
+		subplot(236)
+		stem(te, xe)
+		title('sampling rate 44000Hz')
+		\end{verbatim}
+	}
+\end{multicols}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw12_output}
+	\caption{Przebiegi o równej częstotliwości próbkowane z różną częstotliwością wyświetlone w dziedzinie czasu}
+\end{figure}
+\newpage
+
+\subsection{Generowanie przebiegów sinusoidalnych przesuniętych w fazie}
+M-plik użyty do generacji wykresów:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		%sampling frequency
+		fs=4000;
+		
+		%samples vector
+		n=[0:63];
+		
+		%signal frequency
+		f=2000;
+		
+		%time vectors
+		t=n/fs;
+		
+		%signal model
+		xa=sin(2*pi*f*t);
+		xb=sin(2*pi*f*t + pi/4);
+		xc=sin(2*pi*f*t + pi/2);
+		xd=sin(2*pi*f*t + 0.11*pi);
+		
+		subplot(221)
+		stem(t, xa)
+		title('\phi_1 = 0', 'fontsize', 15)
+		subplot(222)
+		stem(t, xb)
+		title('\phi_1 = \pi/4', 'fontsize', 15)
+		subplot(223)
+		stem(t, xc)
+		title('\phi_1 = \pi/2', 'fontsize', 15)
+		subplot(224)
+		stem(t, xd)
+		title('\phi_1 = 0.11\pi', 'fontsize', 15)
+		\end{verbatim}
+	}
+\end{multicols}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw13_output}
+	\caption{Przebiegi o równej częstotliwości z różnym przesunięciem fazowym i próbkowane z równą częstotliwością}
+\end{figure}
+Ponieważ częstotliwość próbkowania sygnału jest dwukrotnie większa od częstotliwości sygnału sygnał jest próbkowany zawsze w tych samych dwóch miejscach w okresie. Od przesunięcia fazowego sygnału zależy jakie wielkości osiągną próbki.
+\newpage
+
+\subsection{Generowanie przebiegów sinusoidalnych o rożnych częstotliwościach}
+M-plik użyty do generacji wykresów:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		%sampling frequency
+		fs=4000;
+		
+		%samples vector
+		n=[0:127];
+		
+		%signal frequency
+		fa=1800;
+		fb=2200;
+		fc=5800;
+		
+		%time vectors
+		t=n/fs;
+		
+		%signal model
+		xa=sin(2*pi*fa*t);
+		xb=sin(2*pi*fb*t);
+		xc=sin(2*pi*fc*t);
+		
+		subplot(311)
+		stem(t, xa)
+		title('f = 1800Hz', 'fontsize', 15)
+		subplot(312)
+		stem(t, xb)
+		title('f = 2200Hz', 'fontsize', 15)
+		subplot(313)
+		stem(t, xc)
+		title('f = 5800Hz', 'fontsize', 15)
+		\end{verbatim}
+	}
+\end{multicols}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw14_output}
+	\caption{Przebiegi o różnej częstotliwości próbkowane z równą częstotliwością wyświetlone w dziedzinie czasu}
+\end{figure}
+\newpage
+
+\subsection{Rekonstrukcja sygnałów cyfrowych}
+M-plik użyty do generacji wykresów:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		%sampling frequency
+		fsa=44000;
+		fsd=1000;
+		
+		%samples vector
+		nd=[0:15];
+		na=[0:44*length(nd)];
+		
+		%signal frequency
+		f=100;
+		
+		%time vectors
+		ta=na/fsa;
+		td=nd/fsd;
+		
+		%signal model
+		xa=sin(2*pi*f*ta);
+		xd=sin(2*pi*f*td);
+		
+		%reconstructions
+		xl=interp1(td, xd, ta, "linear");
+		xn=interp1(td, xd, ta, "nearest");
+		
+		xs=zeros(size(ta));
+		for  k = 1:length(td);
+		st = xd(k)*sinc(fsd*(ta-td(k)));
+		xs = xs + st;
+		end
+		
+		hold on
+		
+		subplot(222)
+		plot(ta, xs, 'r')
+		hold on
+		plot(ta, xa)
+		title("sygnal odtworzony interpolacja sinc"
+		, "fontsize", 12)
+		
+		subplot(223)
+		plot(ta, xl)
+		title("sygnal odtworzony interpolacja linear"
+		, "fontsize", 12)
+		
+		subplot(224)
+		plot(ta, xn)
+		title("sygnal odtworzony interpolacja nearest"
+		, "fontsize", 12)
+		
+		subplot(221)
+		stem(td, xd)
+		hold on
+		plot(ta, xa)
+		title("sygnal analogowy i sprobkowany"
+		, "fontsize", 12)
+		\end{verbatim}
+	}
+\end{multicols}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw15_output}
+	\caption{Sygnały zrekonstruowane za pomocą trzech algorytmów}
+\end{figure}
+
+
+\end{document}
