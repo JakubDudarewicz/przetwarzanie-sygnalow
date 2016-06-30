@@ -1,5 +1,0 @@
-n = 2; %rzad
-fs = 8000; %probkowanie
-teta = 0.2; %graniczna
-
-omega = @*
