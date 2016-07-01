@@ -1,7 +1,7 @@
 %XCORR
 
 s=sin([0:0.01:4*pi]);
-ss=s+rand(1,length(s))*0.2-0.1;
+ss=s+rand(1,length(s))*4-2;
 
 [c, lags] = xcorr(s);
 [cc, lags1] = xcorr(s,ss);

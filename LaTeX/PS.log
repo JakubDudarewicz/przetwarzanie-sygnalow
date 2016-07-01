@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.6.9)  1 JUL 2016 04:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.6.9)  1 JUL 2016 04:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1610,30 +1610,99 @@ Package epstopdf Info: Source file: <../cw54_output.eps>
 (epstopdf)                    date: 2016-06-30 22:57:32
 (epstopdf)                    size: 117945 bytes
 (epstopdf)             Output file: <../cw54_output-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 04:06:03
+(epstopdf)                    size: 40436 bytes
 (epstopdf)             Command: <epstopdf --outfile=../cw54_output-eps-converte
 d-to.pdf ../cw54_output.eps>
-(epstopdf)             \includegraphics on input line 1245.
-runsystem(epstopdf --outfile=../cw54_output-eps-converted-to.pdf ../cw54_output
-.eps)...executed.
-
-Package epstopdf Info: Result file: <../cw54_output-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-07-01 04:06:03
-(epstopdf)                    size: 40436 bytes.
+(epstopdf)             \includegraphics on input line 1246.
+Package epstopdf Info: Output file is already uptodate.
 
 <../cw54_output-eps-converted-to.pdf, id=402, 421.575pt x 317.185pt>
 File: ../cw54_output-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../cw54_output-eps-converted-to.pdf>
 Package pdftex.def Info: ../cw54_output-eps-converted-to.pdf used on input line
- 1245.
+ 1246.
 (pdftex.def)             Requested size: 295.10048pt x 222.02797pt.
  [28 <../cw53_output-eps-converted-to.pdf> <../cw54_output-eps-converted-to.pdf
+>]
+Package epstopdf Info: Source file: <../cw54_output.eps>
+(epstopdf)                    date: 2016-06-30 22:57:32
+(epstopdf)                    size: 117945 bytes
+(epstopdf)             Output file: <../cw54_output-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 04:06:03
+(epstopdf)                    size: 40436 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw54_output-eps-converte
+d-to.pdf ../cw54_output.eps>
+(epstopdf)             \includegraphics on input line 1256.
+Package epstopdf Info: Output file is already uptodate.
+File: ../cw54_output-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw54_output-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw54_output-eps-converted-to.pdf used on input line
+ 1256.
+(pdftex.def)             Requested size: 295.10048pt x 222.02797pt.
+Package epstopdf Info: Source file: <../cw56_output.eps>
+(epstopdf)                    date: 2016-06-30 23:09:29
+(epstopdf)                    size: 120614 bytes
+(epstopdf)             Output file: <../cw56_output-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 04:14:11
+(epstopdf)                    size: 39706 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw56_output-eps-converte
+d-to.pdf ../cw56_output.eps>
+(epstopdf)             \includegraphics on input line 1265.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw56_output-eps-converted-to.pdf, id=416, 421.575pt x 317.185pt>
+File: ../cw56_output-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw56_output-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw56_output-eps-converted-to.pdf used on input line
+ 1265.
+(pdftex.def)             Requested size: 295.10048pt x 222.02797pt.
+ [29 <../cw56_output-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../cw57_output.eps>
+(epstopdf)                    date: 2016-06-30 23:11:55
+(epstopdf)                    size: 78743 bytes
+(epstopdf)             Output file: <../cw57_output-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 04:15:32
+(epstopdf)                    size: 26713 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw57_output-eps-converte
+d-to.pdf ../cw57_output.eps>
+(epstopdf)             \includegraphics on input line 1274.
+Package epstopdf Info: Output file is already uptodate.
+ <../cw57_output-eps-converted-to.pdf, id=425, 421.575pt x 317.185pt>
+File: ../cw57_output-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw57_output-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw57_output-eps-converted-to.pdf used on input line
+ 1274.
+(pdftex.def)             Requested size: 252.94695pt x 190.31245pt.
+Package epstopdf Info: Source file: <../cw58_output.eps>
+(epstopdf)                    date: 2016-07-01 04:23:18
+(epstopdf)                    size: 173664 bytes
+(epstopdf)             Output file: <../cw58_output-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 04:23:27
+(epstopdf)                    size: 58991 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw58_output-eps-converte
+d-to.pdf ../cw58_output.eps>
+(epstopdf)             \includegraphics on input line 1308.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw58_output-eps-converted-to.pdf, id=426, 421.575pt x 317.185pt>
+File: ../cw58_output-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw58_output-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw58_output-eps-converted-to.pdf used on input line
+ 1308.
+(pdftex.def)             Requested size: 337.26045pt x 253.74832pt.
+ [30 <../cw57_output-eps-converted-to.pdf> <../cw58_output-eps-converted-to.pdf
 >] (./PS.aux) ) 
 Here is how much of TeX's memory you used:
- 5751 strings out of 493014
- 90787 string characters out of 6137002
+ 5766 strings out of 493014
+ 91309 string characters out of 6137002
  160737 words of memory out of 5000000
- 9083 multiletter control sequences out of 15000+600000
+ 9095 multiletter control sequences out of 15000+600000
  64384 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,10n,49p,730b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1648,10 +1717,10 @@ public/lm/lmmi8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 exmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2016/texmf-dist/fonts/typ
 e1/public/lm/lmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt1
 0.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on PS.pdf (29 pages, 2903564 bytes).
+Output written on PS.pdf (31 pages, 3022575 bytes).
 PDF statistics:
- 455 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
+ 483 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 376 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 391 words of extra memory for PDF output out of 10000 (max. 10000000)
 

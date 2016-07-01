@@ -1237,6 +1237,7 @@ Z powodu szumowego charakteru obydwu sygnałów nie jesteśmy w stanie wyznaczy�
 	\includegraphics[scale=0.7]{../cw53_output}
 	\caption{Wynik autokorelacji sygnału sinusoidalnego}
 \end{figure}
+Wynik autokorelacji świadczy o samopodobieństwie sygnału sinusoidalnego.
 
 \subsection{Korelacja sygnałów $sin$, oraz $cos$}
 
@@ -1245,6 +1246,71 @@ Z powodu szumowego charakteru obydwu sygnałów nie jesteśmy w stanie wyznaczy�
 	\includegraphics[scale=0.7]{../cw54_output}
 	\caption{Wynik korelacji sygnałów}
 \end{figure}
+Ponieważ sygnał kosinusoidalny jest tak podobny do sinusoidalnego, wynik korelacji nie dziwi i świadczy o podobieństwie tych sygnałów.
+\newpage
+
+\subsection{Korelacja sygnałów przesuniętych o pół fazy}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw54_output}
+	\caption{Wynik korelacji sygnałów}
+\end{figure}
+Wynik jest identyczny jak przy korelacji z zadania 4, bo przesunięta sinusoida to to samo co kosinusoida.
+
+\subsection{Korelacja sygnałów przesuniętych całą fazę}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw56_output}
+	\caption{Wynik korelacji sygnałów}
+\end{figure}
+Wynik jest identyczny jak przy autokorelacji sinusoidy, ponieważ sygnały są identyczne.
+\newpage
+
+\subsection{Autokorelacja sygnału zlożonego}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.6]{../cw57_output}
+	\caption{Wynik autokorelacji}
+\end{figure}
+Autkorelacja wykazuje samopodobieństwo, ponieważ sygnał jest okresowy.
+
+\subsection{Korelacja sygnałów zaszumionych}
+Skrypt użyty do generacji wykresów:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		s=sin([0:0.01:4*pi]);
+		ss=s+rand(1,length(s))*0.2-0.1;
+		
+		[c, lags] = xcorr(s);
+		[cc, lags1] = xcorr(s,ss);
+		
+		subplot(221)
+		plot(s)
+		title('sygnal wejsciowy')
+		subplot(222)
+		plot(ss)
+		title('sygnal zaszumiony')
+		subplot(223)
+		plot(c)
+		title('autokorelacja sygnalu zaszumionego')
+		subplot(224)
+		plot(c,cc)
+		title('korelacja sygnalow')
+		\end{verbatim}
+	}
+\end{multicols}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{../cw58_output}
+	\caption{}
+\end{figure}
+Nawet sygnał zaszumiony jest samopodobny. Co więcej, korelacja sygnału przed i po dodaniem szumu wykazuje bardzo mocne podobieństwo. Pokazuje to jak przydatna jest opercja korelacji przy wyszukiwaniu wzorów.
+	
+	
 
 
 
