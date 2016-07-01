@@ -994,5 +994,258 @@ Aby sprostać wymaganiom zadania zwiększyłem rząd filtru do 200.
 
 \section{Filtry NOI}
 
+\subsection{Filtr dolnoprzepustowy}
+Skrypt użyty do projektowania filtrów:
+\begin{multicols}{2}
+	{
+		\tiny
+		\begin{verbatim}
+		n = 10; %rzad
+		fs = 16000; %probkowanie
+		teta = 0.1; %graniczna
+		%czestotliwosci analogowe
+		omega = 2*fs*tan(pi*teta/2);
+		%znormalizowany prototyp filtru analogowego
+		[z, p, k] = buttap(n);
+		%figure(1);
+		%zplane(z,p);
+		%transmitancja filtru znormalizowanego
+		[num, den] = zp2tf(z,p,k);
+		%denormalizacja
+		[numt, dent] = lp2lp(num, den, omega);
+		figure(2);
+		freqs(numt,dent);
+		%transmitancja filtru cyfrowego
+		[BB, AA] = bilinear(numt, dent, fs);
+		figure(3);
+		freqz(BB,AA);
+		\end{verbatim}
+	}
+\end{multicols}
+\begin{figure}[!h]
+	\centering
+	\subfloat[Filtr analogowy]{
+		\includegraphics[scale=0.5]{../cw41_output_A}
+	}
+	\subfloat[Filtr cyfrowy]{
+		\includegraphics[scale=0.5]{../cw41_output_D}
+	}
+	\caption{Charakterystyki amplitudowe i fazowe filtrów}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\subfloat[Butterworth]{
+		\includegraphics[scale=0.2]{../cw41_output_butter}
+	}
+	\subfloat[Chebyshev 1]{
+		\includegraphics[scale=0.2]{../cw41_output_cheby1}
+	}
+	\par
+	\subfloat[Chebyshev 2]{
+		\includegraphics[scale=0.2]{../cw41_output_cheby2}
+	}
+	\caption{Filtry projektowane z użyciem różnych prototypów}
+\end{figure}
+Prototyp Butterwortha powoduje, że filtr ma łagodniejsze charakterystyki i Chebyshev 1 typu jest zbliżony. Prototyp Chebysheva 2 typu ma dużą amplitudę listków bocznych, ale też bardziej stromą charakterystykę w paśmie przejściowym.
+\newpage
+
+\subsection{Filtr górnoprzepustowy}
+Skrypt użyty do projektowania filtrów:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		n = 10; %rzad
+		fs = 16000; %probkowanie
+		teta = 0.1; %graniczna
+		%czestotliwosci analogowe
+		omega = 2*fs*tan(pi*teta/2);
+		%znormalizowany prototyp filtru analogowego
+		[z, p, k] = buttap(n);
+		%figure(1);
+		%zplane(z,p);
+		%transmitancja filtru znormalizowanego
+		[num, den] = zp2tf(z,p,k);
+		%denormalizacja
+		[numt, dent] = lp2hp(num, den, omega);
+		figure(2);
+		freqs(numt,dent);
+		%transmitancja filtru cyfrowego
+		[BB, AA] = bilinear(numt, dent, fs);
+		figure(3);
+		freqz(BB,AA);
+		\end{verbatim}
+	}
+\end{multicols}
+\begin{figure}[!h]
+	\centering
+	\subfloat[Filtr cyfrowy]{
+		\includegraphics[scale=0.5]{../cw42_output_butter_D}
+	}
+	\subfloat[Filtr analogowy]{
+		\includegraphics[scale=0.5]{../cw42_output_butter_A}
+	}
+	\caption{Filtr Butterwortha}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\subfloat[Filtr cyfrowy]{
+		\includegraphics[scale=0.5]{../cw42_output_cheb1_D}
+	}
+	\subfloat[Filtr analogowy]{
+		\includegraphics[scale=0.5]{../cw42_output_cheb1_A}
+	}
+	\caption{Filtr Chebysheva 1 typu}
+\end{figure}
+\newpage
+\begin{figure}[!h]
+	\centering
+	\subfloat[Filtr cyfrowy]{
+		\includegraphics[scale=0.5]{../cw42_output_cheb2_D}
+	}
+	\subfloat[Filtr analogowy]{
+		\includegraphics[scale=0.5]{../cw42_output_cheb2_A}
+	}
+	\caption{Filtr Chebysheva 2 typu}
+\end{figure}
+Aby filtr Chebysheva 2 typu był opłacalny, musiałby mieć wysoki rząd. Przy rzędzie 10 najbardziej użyteczny jest filtr Butterwortha ze względu na małą amplitudę listków w pasmie zaporowym oraz łagodne charakterystyki.
+
+\subsection{Filtracja NOI}
+Skrypt użyty do filtrowania sygnałów:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		%sampling frequency
+		fs=96000;
+		
+		%samples vector
+		n=[0:500];
+		
+		%signal frequency
+		f1=800;
+		f2=2000;
+		f3=4500;
+		
+		%time vectors
+		t=(n/fs);
+		t1=2*pi*t;
+		
+		%signal model
+		x=sin(t1*f1)+sin(t1*f2)+sin(t1*f3);
+		
+		rzad = 10; %rzad
+		fs = 16000; %probkowanie
+		teta = 0.1; %graniczna
+		%czestotliwosci analogowe
+		omega = 2*fs*tan(pi*teta/2);
+		%znormalizowany prototyp filtru analogowego
+		[z, p, k] = cheb2ap(rzad,1);
+		%figure(1);
+		%zplane(z,p);
+		%transmitancja filtru znormalizowanego
+		[num, den] = zp2tf(z,p,k);
+		%denormalizacja
+		[numt, dent] = lp2hp(num, den, omega);
+		%transmitancja filtru cyfrowego
+		[BB, AA] = bilinear(numt, dent, fs);
+		
+		y=filter(BB, AA, x);
+		
+		subplot(211);
+		plot(t, x);
+		title('sygnal wejsciowy');
+		subplot(212);
+		plot(t, y);
+		title('sygnal wyjsciowy');
+		\end{verbatim}
+	}
+\end{multicols}
+\begin{figure}[!h]
+	\centering
+	\subfloat[Przebiegi]{
+		\includegraphics[scale=0.5]{../cw43_output_butter}
+	}
+	\subfloat[Widma]{
+		\includegraphics[scale=0.5]{../cw43_output_butter_widmo}
+	}
+	\caption{Górnoprzepustowa filtracja Butterwortha}
+\end{figure}
+Bardzo czysta filtracja zostawiła jedną harmoniczną i bardzo znacznie stłumiła pozostałe. Bardzo wyraźnie widać to zarówno w przebiegu jak i w widmie sygnałów.
+\newpage
+
+\begin{figure}[!h]
+	\centering
+	\subfloat[Przebiegi]{
+		\includegraphics[scale=0.5]{../cw43_output_butter_lp_0_05}
+	}
+	\subfloat[Widma]{
+		\includegraphics[scale=0.5]{../cw43_output_butter_lp_0_05_widmo}
+	}
+	\caption{Dolnoprzepustowa filtracja Butterwortha}
+\end{figure}
+Tak jak w przypadku filtracji górnoprzepustowej, filtracja dolnoprzeputowa Butterwortha daje bardzo dobre rezultaty lekko tylko tłumiąc interesuące nas pasmo.
+
+\begin{figure}[!h]
+	\centering
+	\subfloat[Przebiegi]{
+		\includegraphics[scale=0.5]{../cw43_output_cheb1}
+	}
+	\subfloat[Widma]{
+		\includegraphics[scale=0.5]{../cw43_output_cheb1_widmo}
+	}
+	\caption{Górnoprzepustowa filtracja Chebysheva 1 typu}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\subfloat[Przebiegi]{
+		\includegraphics[scale=0.5]{../cw43_output_cheb2}
+	}
+	\subfloat[Widma]{
+		\includegraphics[scale=0.5]{../cw43_output_cheb2_widmo}
+	}
+	\caption{Górnoprzepustowa filtracja Chebysheva 2 typu}
+\end{figure}
+Filtr Chebysheva 1 typu daje w miarę przyzwoite wyniki. Filtrując niskie czestotliwości jednocześnie wprowadza znaczne zniekształcenia. Filtr Chebysheva 2 typu daje bardzo słabe wyniki.
+\newpage
+
+\section{Analiza korelacyjna sygnałów}
+W tej sekcji nie zamieszczam zbednych skrawków koduograniczających się do wywoływania funkcji.
+\subsection{Autokorelacja szumu}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw51_output}
+	\caption{Wyniki autokorelacji szumu}
+\end{figure}
+Ze wzgledu na swoj losowy charakter, autokorelacja sygnału szumowego skutkuje jedną duża wartością dla zerowego przesunięcia.
+
+\subsection{Korelacja dwóch sygnałów szumowych}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw52_output}
+	\caption{Wyniki korelacji dwóch sygnałów szumowych}
+\end{figure}
+Z powodu szumowego charakteru obydwu sygnałów nie jesteśmy w stanie wyznaczyć żadnej korelacji.
+\newpage
+
+\subsection{Autokorelacja sygnału sinusoidalnego}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw53_output}
+	\caption{Wynik autokorelacji sygnału sinusoidalnego}
+\end{figure}
+
+\subsection{Korelacja sygnałów $sin$, oraz $cos$}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw54_output}
+	\caption{Wynik korelacji sygnałów}
+\end{figure}
+
+
 
 \end{document}

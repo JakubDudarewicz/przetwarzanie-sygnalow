@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.6.9)  1 JUL 2016 03:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.6.9)  1 JUL 2016 04:06
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1175,31 +1175,483 @@ File: ../cw34_output-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../cw34_output-eps-converted-to.pdf used on input line
  989.
 (pdftex.def)             Requested size: 295.10048pt x 222.02797pt.
- [22 <../cw34_polecenie.png> <../cw34_output-eps-converted-to.pdf>] [23] (./PS.
-aux) ) 
+ [22 <../cw34_polecenie.png> <../cw34_output-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../cw41_output_A.eps>
+(epstopdf)                    date: 2016-06-30 16:42:08
+(epstopdf)                    size: 42431 bytes
+(epstopdf)             Output file: <../cw41_output_A-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 03:33:21
+(epstopdf)                    size: 9724 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw41_output_A-eps-conver
+ted-to.pdf ../cw41_output_A.eps>
+(epstopdf)             \includegraphics on input line 1029.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw41_output_A-eps-converted-to.pdf, id=164, 421.575pt x 316.18124pt>
+File: ../cw41_output_A-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw41_output_A-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw41_output_A-eps-converted-to.pdf used on input li
+ne 1029.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <../cw41_output_D.eps>
+(epstopdf)                    date: 2016-06-30 16:42:17
+(epstopdf)                    size: 184763 bytes
+(epstopdf)             Output file: <../cw41_output_D-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 03:33:22
+(epstopdf)                    size: 15270 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw41_output_D-eps-conver
+ted-to.pdf ../cw41_output_D.eps>
+(epstopdf)             \includegraphics on input line 1032.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw41_output_D-eps-converted-to.pdf, id=165, 421.575pt x 316.18124pt>
+File: ../cw41_output_D-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw41_output_D-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw41_output_D-eps-converted-to.pdf used on input li
+ne 1032.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <../cw41_output_butter.eps>
+(epstopdf)                    date: 2016-06-30 16:54:39
+(epstopdf)                    size: 496874 bytes
+(epstopdf)             Output file: <../cw41_output_butter-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2016-07-01 03:37:31
+(epstopdf)                    size: 108936 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw41_output_butter-eps-c
+onverted-to.pdf ../cw41_output_butter.eps>
+(epstopdf)             \includegraphics on input line 1039.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw41_output_butter-eps-converted-to.pdf, id=166, 1204.5pt x 544.0325pt>
+File: ../cw41_output_butter-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw41_output_butter-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw41_output_butter-eps-converted-to.pdf used on inp
+ut line 1039.
+(pdftex.def)             Requested size: 240.89574pt x 108.80457pt.
+Package epstopdf Info: Source file: <../cw41_output_cheby1.eps>
+(epstopdf)                    date: 2016-06-30 16:54:50
+(epstopdf)                    size: 500805 bytes
+(epstopdf)             Output file: <../cw41_output_cheby1-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2016-07-01 03:37:32
+(epstopdf)                    size: 111023 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw41_output_cheby1-eps-c
+onverted-to.pdf ../cw41_output_cheby1.eps>
+(epstopdf)             \includegraphics on input line 1042.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw41_output_cheby1-eps-converted-to.pdf, id=167, 1204.5pt x 544.0325pt>
+File: ../cw41_output_cheby1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw41_output_cheby1-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw41_output_cheby1-eps-converted-to.pdf used on inp
+ut line 1042.
+(pdftex.def)             Requested size: 240.89574pt x 108.80457pt.
+Package epstopdf Info: Source file: <../cw41_output_cheby2.eps>
+(epstopdf)                    date: 2016-06-30 16:54:58
+(epstopdf)                    size: 500335 bytes
+(epstopdf)             Output file: <../cw41_output_cheby2-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2016-07-01 03:37:33
+(epstopdf)                    size: 109154 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw41_output_cheby2-eps-c
+onverted-to.pdf ../cw41_output_cheby2.eps>
+(epstopdf)             \includegraphics on input line 1046.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw41_output_cheby2-eps-converted-to.pdf, id=168, 1204.5pt x 544.0325pt>
+File: ../cw41_output_cheby2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw41_output_cheby2-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw41_output_cheby2-eps-converted-to.pdf used on inp
+ut line 1046.
+(pdftex.def)             Requested size: 240.89574pt x 108.80457pt.
+ [23 <../cw41_output_A-eps-converted-to.pdf> <../cw41_output_D-eps-converted-to
+.pdf> <../cw41_output_butter-eps-converted-to.pdf> <../cw41_output_cheby1-eps-c
+onverted-to.pdf> <../cw41_output_cheby2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../cw42_output_butter_D.eps>
+(epstopdf)                    date: 2016-06-30 17:57:03
+(epstopdf)                    size: 190179 bytes
+(epstopdf)             Output file: <../cw42_output_butter_D-eps-converted-to.p
+df>
+(epstopdf)                    date: 2016-07-01 03:43:47
+(epstopdf)                    size: 13880 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw42_output_butter_D-eps
+-converted-to.pdf ../cw42_output_butter_D.eps>
+(epstopdf)             \includegraphics on input line 1084.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw42_output_butter_D-eps-converted-to.pdf, id=239, 421.575pt x 317.185pt>
+File: ../cw42_output_butter_D-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw42_output_butter_D-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw42_output_butter_D-eps-converted-to.pdf used on i
+nput line 1084.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+Package epstopdf Info: Source file: <../cw42_output_butter_A.eps>
+(epstopdf)                    date: 2016-06-30 17:57:15
+(epstopdf)                    size: 26137 bytes
+(epstopdf)             Output file: <../cw42_output_butter_A-eps-converted-to.p
+df>
+(epstopdf)                    date: 2016-07-01 03:43:48
+(epstopdf)                    size: 8423 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw42_output_butter_A-eps
+-converted-to.pdf ../cw42_output_butter_A.eps>
+(epstopdf)             \includegraphics on input line 1087.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw42_output_butter_A-eps-converted-to.pdf, id=240, 421.575pt x 317.185pt>
+File: ../cw42_output_butter_A-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw42_output_butter_A-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw42_output_butter_A-eps-converted-to.pdf used on i
+nput line 1087.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+Package epstopdf Info: Source file: <../cw42_output_cheb1_D.eps>
+(epstopdf)                    date: 2016-06-30 17:58:06
+(epstopdf)                    size: 188664 bytes
+(epstopdf)             Output file: <../cw42_output_cheb1_D-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-07-01 03:43:05
+(epstopdf)                    size: 16083 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw42_output_cheb1_D-eps-
+converted-to.pdf ../cw42_output_cheb1_D.eps>
+(epstopdf)             \includegraphics on input line 1094.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw42_output_cheb1_D-eps-converted-to.pdf, id=241, 421.575pt x 317.185pt>
+File: ../cw42_output_cheb1_D-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw42_output_cheb1_D-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw42_output_cheb1_D-eps-converted-to.pdf used on in
+put line 1094.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+Package epstopdf Info: Source file: <../cw42_output_cheb1_A.eps>
+(epstopdf)                    date: 2016-06-30 17:58:17
+(epstopdf)                    size: 27326 bytes
+(epstopdf)             Output file: <../cw42_output_cheb1_A-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-07-01 03:43:06
+(epstopdf)                    size: 8661 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw42_output_cheb1_A-eps-
+converted-to.pdf ../cw42_output_cheb1_A.eps>
+(epstopdf)             \includegraphics on input line 1097.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw42_output_cheb1_A-eps-converted-to.pdf, id=242, 421.575pt x 317.185pt>
+File: ../cw42_output_cheb1_A-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw42_output_cheb1_A-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw42_output_cheb1_A-eps-converted-to.pdf used on in
+put line 1097.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+ [24 <../cw42_output_butter_D-eps-converted-to.pdf> <../cw42_output_butter_A-ep
+s-converted-to.pdf> <../cw42_output_cheb1_D-eps-converted-to.pdf> <../cw42_outp
+ut_cheb1_A-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../cw42_output_cheb2_D.eps>
+(epstopdf)                    date: 2016-06-30 17:58:46
+(epstopdf)                    size: 189288 bytes
+(epstopdf)             Output file: <../cw42_output_cheb2_D-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-07-01 03:42:14
+(epstopdf)                    size: 13715 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw42_output_cheb2_D-eps-
+converted-to.pdf ../cw42_output_cheb2_D.eps>
+(epstopdf)             \includegraphics on input line 1105.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw42_output_cheb2_D-eps-converted-to.pdf, id=283, 421.575pt x 317.185pt>
+File: ../cw42_output_cheb2_D-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw42_output_cheb2_D-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw42_output_cheb2_D-eps-converted-to.pdf used on in
+put line 1105.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+Package epstopdf Info: Source file: <../cw42_output_cheb2_A.eps>
+(epstopdf)                    date: 2016-06-30 17:59:20
+(epstopdf)                    size: 44256 bytes
+(epstopdf)             Output file: <../cw42_output_cheb2_A-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-07-01 03:42:15
+(epstopdf)                    size: 10269 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw42_output_cheb2_A-eps-
+converted-to.pdf ../cw42_output_cheb2_A.eps>
+(epstopdf)             \includegraphics on input line 1108.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw42_output_cheb2_A-eps-converted-to.pdf, id=284, 421.575pt x 317.185pt>
+File: ../cw42_output_cheb2_A-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw42_output_cheb2_A-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw42_output_cheb2_A-eps-converted-to.pdf used on in
+put line 1108.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+Package epstopdf Info: Source file: <../cw43_output_butter.eps>
+(epstopdf)                    date: 2016-06-30 18:13:57
+(epstopdf)                    size: 101499 bytes
+(epstopdf)             Output file: <../cw43_output_butter-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2016-07-01 03:49:02
+(epstopdf)                    size: 15061 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw43_output_butter-eps-c
+onverted-to.pdf ../cw43_output_butter.eps>
+(epstopdf)             \includegraphics on input line 1168.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw43_output_butter-eps-converted-to.pdf, id=285, 421.575pt x 317.185pt>
+File: ../cw43_output_butter-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw43_output_butter-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw43_output_butter-eps-converted-to.pdf used on inp
+ut line 1168.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+Package epstopdf Info: Source file: <../cw43_output_butter_widmo.eps>
+(epstopdf)                    date: 2016-06-30 18:20:15
+(epstopdf)                    size: 35452 bytes
+(epstopdf)             Output file: <../cw43_output_butter_widmo-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-07-01 03:49:03
+(epstopdf)                    size: 10621 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw43_output_butter_widmo
+-eps-converted-to.pdf ../cw43_output_butter_widmo.eps>
+(epstopdf)             \includegraphics on input line 1171.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw43_output_butter_widmo-eps-converted-to.pdf, id=286, 421.575pt x 317.185p
+t>
+File: ../cw43_output_butter_widmo-eps-converted-to.pdf Graphic file (type pdf)
+ <use ../cw43_output_butter_widmo-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw43_output_butter_widmo-eps-converted-to.pdf used 
+on input line 1171.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+ [25 <../cw42_output_cheb2_D-eps-converted-to.pdf> <../cw42_output_cheb2_A-eps-
+converted-to.pdf> <../cw43_output_butter-eps-converted-to.pdf> <../cw43_output_
+butter_widmo-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../cw43_output_butter_lp_0_05.eps>
+(epstopdf)                    date: 2016-06-30 18:18:09
+(epstopdf)                    size: 102144 bytes
+(epstopdf)             Output file: <../cw43_output_butter_lp_0_05-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2016-07-01 03:51:36
+(epstopdf)                    size: 15089 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw43_output_butter_lp_0_
+05-eps-converted-to.pdf ../cw43_output_butter_lp_0_05.eps>
+(epstopdf)             \includegraphics on input line 1181.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw43_output_butter_lp_0_05-eps-converted-to.pdf, id=325, 421.575pt x 317.18
+5pt>
+File: ../cw43_output_butter_lp_0_05-eps-converted-to.pdf Graphic file (type pdf
+)
+ <use ../cw43_output_butter_lp_0_05-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw43_output_butter_lp_0_05-eps-converted-to.pdf use
+d on input line 1181.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+Package epstopdf Info: Source file: <../cw43_output_butter_lp_0_05_widmo.eps>
+(epstopdf)                    date: 2016-06-30 18:19:25
+(epstopdf)                    size: 35468 bytes
+(epstopdf)             Output file: <../cw43_output_butter_lp_0_05_widmo-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2016-07-01 03:51:49
+(epstopdf)                    size: 10509 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw43_output_butter_lp_0_
+05_widmo-eps-converted-to.pdf ../cw43_output_butter_lp_0_05_widmo.eps>
+(epstopdf)             \includegraphics on input line 1184.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw43_output_butter_lp_0_05_widmo-eps-converted-to.pdf, id=326, 421.575pt x 
+317.185pt>
+File: ../cw43_output_butter_lp_0_05_widmo-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use ../cw43_output_butter_lp_0_05_widmo-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw43_output_butter_lp_0_05_widmo-eps-converted-to.p
+df used on input line 1184.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+Package epstopdf Info: Source file: <../cw43_output_cheb1.eps>
+(epstopdf)                    date: 2016-06-30 18:14:26
+(epstopdf)                    size: 102190 bytes
+(epstopdf)             Output file: <../cw43_output_cheb1-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2016-07-01 03:53:45
+(epstopdf)                    size: 15310 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw43_output_cheb1-eps-co
+nverted-to.pdf ../cw43_output_cheb1.eps>
+(epstopdf)             \includegraphics on input line 1193.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw43_output_cheb1-eps-converted-to.pdf, id=327, 421.575pt x 317.185pt>
+File: ../cw43_output_cheb1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw43_output_cheb1-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw43_output_cheb1-eps-converted-to.pdf used on inpu
+t line 1193.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+Package epstopdf Info: Source file: <../cw43_output_cheb1_widmo.eps>
+(epstopdf)                    date: 2016-06-30 21:55:59
+(epstopdf)                    size: 35446 bytes
+(epstopdf)             Output file: <../cw43_output_cheb1_widmo-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-07-01 03:53:46
+(epstopdf)                    size: 10596 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw43_output_cheb1_widmo-
+eps-converted-to.pdf ../cw43_output_cheb1_widmo.eps>
+(epstopdf)             \includegraphics on input line 1196.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw43_output_cheb1_widmo-eps-converted-to.pdf, id=328, 421.575pt x 317.185pt
+>
+File: ../cw43_output_cheb1_widmo-eps-converted-to.pdf Graphic file (type pdf)
+ <use ../cw43_output_cheb1_widmo-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw43_output_cheb1_widmo-eps-converted-to.pdf used o
+n input line 1196.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+Package epstopdf Info: Source file: <../cw43_output_cheb2.eps>
+(epstopdf)                    date: 2016-06-30 18:14:49
+(epstopdf)                    size: 102175 bytes
+(epstopdf)             Output file: <../cw43_output_cheb2-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2016-07-01 03:55:48
+(epstopdf)                    size: 15240 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw43_output_cheb2-eps-co
+nverted-to.pdf ../cw43_output_cheb2.eps>
+(epstopdf)             \includegraphics on input line 1204.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw43_output_cheb2-eps-converted-to.pdf, id=329, 421.575pt x 317.185pt>
+File: ../cw43_output_cheb2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw43_output_cheb2-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw43_output_cheb2-eps-converted-to.pdf used on inpu
+t line 1204.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+Package epstopdf Info: Source file: <../cw43_output_cheb2_widmo.eps>
+(epstopdf)                    date: 2016-06-30 21:56:35
+(epstopdf)                    size: 35443 bytes
+(epstopdf)             Output file: <../cw43_output_cheb2_widmo-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-07-01 03:55:49
+(epstopdf)                    size: 10540 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw43_output_cheb2_widmo-
+eps-converted-to.pdf ../cw43_output_cheb2_widmo.eps>
+(epstopdf)             \includegraphics on input line 1207.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw43_output_cheb2_widmo-eps-converted-to.pdf, id=330, 421.575pt x 317.185pt
+>
+File: ../cw43_output_cheb2_widmo-eps-converted-to.pdf Graphic file (type pdf)
+ <use ../cw43_output_cheb2_widmo-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw43_output_cheb2_widmo-eps-converted-to.pdf used o
+n input line 1207.
+(pdftex.def)             Requested size: 210.78697pt x 158.5921pt.
+ [26 <../cw43_output_butter_lp_0_05-eps-converted-to.pdf> <../cw43_output_butte
+r_lp_0_05_widmo-eps-converted-to.pdf> <../cw43_output_cheb1-eps-converted-to.pd
+f> <../cw43_output_cheb1_widmo-eps-converted-to.pdf> <../cw43_output_cheb2-eps-
+converted-to.pdf> <../cw43_output_cheb2_widmo-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../cw51_output.eps>
+(epstopdf)                    date: 2016-06-30 22:52:39
+(epstopdf)                    size: 57307 bytes
+(epstopdf)             Output file: <../cw51_output-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 03:58:37
+(epstopdf)                    size: 18888 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw51_output-eps-converte
+d-to.pdf ../cw51_output.eps>
+(epstopdf)             \includegraphics on input line 1218.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw51_output-eps-converted-to.pdf, id=386, 421.575pt x 317.185pt>
+File: ../cw51_output-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw51_output-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw51_output-eps-converted-to.pdf used on input line
+ 1218.
+(pdftex.def)             Requested size: 295.10048pt x 222.02797pt.
+Package epstopdf Info: Source file: <../cw52_output.eps>
+(epstopdf)                    date: 2016-06-30 22:53:15
+(epstopdf)                    size: 58271 bytes
+(epstopdf)             Output file: <../cw52_output-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 04:00:02
+(epstopdf)                    size: 19356 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw52_output-eps-converte
+d-to.pdf ../cw52_output.eps>
+(epstopdf)             \includegraphics on input line 1227.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw52_output-eps-converted-to.pdf, id=387, 421.575pt x 317.185pt>
+File: ../cw52_output-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw52_output-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw52_output-eps-converted-to.pdf used on input line
+ 1227.
+(pdftex.def)             Requested size: 295.10048pt x 222.02797pt.
+ [27 <../cw51_output-eps-converted-to.pdf> <../cw52_output-eps-converted-to.pdf
+>]
+Package epstopdf Info: Source file: <../cw53_output.eps>
+(epstopdf)                    date: 2016-06-30 22:55:23
+(epstopdf)                    size: 93727 bytes
+(epstopdf)             Output file: <../cw53_output-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 04:02:38
+(epstopdf)                    size: 31915 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw53_output-eps-converte
+d-to.pdf ../cw53_output.eps>
+(epstopdf)             \includegraphics on input line 1237.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw53_output-eps-converted-to.pdf, id=401, 421.575pt x 317.185pt>
+File: ../cw53_output-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw53_output-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw53_output-eps-converted-to.pdf used on input line
+ 1237.
+(pdftex.def)             Requested size: 295.10048pt x 222.02797pt.
+Package epstopdf Info: Source file: <../cw54_output.eps>
+(epstopdf)                    date: 2016-06-30 22:57:32
+(epstopdf)                    size: 117945 bytes
+(epstopdf)             Output file: <../cw54_output-eps-converted-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=../cw54_output-eps-converte
+d-to.pdf ../cw54_output.eps>
+(epstopdf)             \includegraphics on input line 1245.
+runsystem(epstopdf --outfile=../cw54_output-eps-converted-to.pdf ../cw54_output
+.eps)...executed.
+
+Package epstopdf Info: Result file: <../cw54_output-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 04:06:03
+(epstopdf)                    size: 40436 bytes.
+
+<../cw54_output-eps-converted-to.pdf, id=402, 421.575pt x 317.185pt>
+File: ../cw54_output-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw54_output-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw54_output-eps-converted-to.pdf used on input line
+ 1245.
+(pdftex.def)             Requested size: 295.10048pt x 222.02797pt.
+ [28 <../cw53_output-eps-converted-to.pdf> <../cw54_output-eps-converted-to.pdf
+>] (./PS.aux) ) 
 Here is how much of TeX's memory you used:
- 5636 strings out of 493014
- 85950 string characters out of 6137002
+ 5751 strings out of 493014
+ 90787 string characters out of 6137002
  160737 words of memory out of 5000000
- 8991 multiletter control sequences out of 15000+600000
+ 9083 multiletter control sequences out of 15000+600000
  64384 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,10n,49p,730b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/
-2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2016/texmf-dist/fo
-nts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec
-.enc}<c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2
-016/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2016/texmf-dist/fon
-ts/type1/public/lm/lmmi12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm
-/lmmi8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texl
-ive/2016/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2016/texmf-dist
-/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public
-/lm/lmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:
-/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on PS.pdf (24 pages, 2331840 bytes).
+{c:/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:
+/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2016/texm
+f-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2016/texmf-dist/fonts/enc/dvips
+/lm/lm-ec.enc}<c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/
+texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2016/texmf
+-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
+public/lm/lmmi8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb
+><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2016/t
+exmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2016/texmf-dist/fonts/typ
+e1/public/lm/lmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt1
+0.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
+Output written on PS.pdf (29 pages, 2903564 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
+ 455 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 261 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 376 words of extra memory for PDF output out of 10000 (max. 10000000)
 
