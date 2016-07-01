@@ -4,7 +4,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 % grafika 
-\usepackage{graphicx}
+\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
 \usepackage{subfig} 
 \usepackage{multicol}
 %\usepackage{float} - bez tego można ustawić 2 obrazki obok siebie
@@ -29,10 +30,10 @@
 \end{titlepage}
 	
 %definicja formatowania nagłówków
-	\def\thesection{Zadanie \arabic{section}.\Large}
-	\def\thesubsection{Zadanie \arabic{section}.\arabic{subsection}\normalsize}
+	\def\thesection{Instrukcja \arabic{section}.\Large}
+	\def\thesubsection{Instrukcja \arabic{section}, zadanie \arabic{subsection}\normalsize}
 	\def\theparagraph{\normalsize}%doesnotwork
-\section{Instrukcja 0}
+\section{Podstawy generacji sygnałów}
 \subsection{Operacje tablicowe i macierzowe}
 
 Wynik operacji mnożenia macierzowego i tablicowego:
@@ -285,7 +286,7 @@ M-plik użyty do generacji wykresów:
 Modulacja osiągana jest poprzez pomnożenie tablicowe przez siebie dwóch sygnałów.
 \newpage
 
-\section{Instrukcja 1}
+\section{Podstawy próbkowania sygnałów}
 \subsection{Generowanie przebiegów sinusoidalnych o pulsacji znormalizowanej}
 M-plik użyty do generacji wykresów:
 \begin{multicols}{2}
@@ -544,6 +545,162 @@ M-plik użyty do generacji wykresów:
 	\includegraphics[scale=0.7]{../cw15_output}
 	\caption{Sygnały zrekonstruowane za pomocą trzech algorytmów}
 \end{figure}
+Z wybranych algorytmów najbliżej oryginalnego jest przybliżenie za pomocą funkcji sinc. Interpolacja typu linear wprowadza dużo składowych o wysokiej częstotliwości. natomiast interpolacja nearest nie nadaje się w zasadzie do niczego.
+\newpage
+
+\section{Transformata Fourriera}
+
+\subsection{Podstawy DFT} 
+\begin{figure}[!h]
+	\centering
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_a}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_b}
+	}
+	\par
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_c}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_d}
+	}
+	\par
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_e}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_f}
+	}
+	\par
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_g}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_h}
+	}
+	\caption{Wyniki transformacji fourriera a - h}
+\end{figure}
+\newpage
+\begin{figure}[!h]
+	
+	\centering
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_i}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_j}
+	}
+	\par
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_k}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_l}
+	}
+	\par
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_m}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_n}
+	}
+	\par
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_o}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_p}
+	}
+	\caption{Wyniki transfpormacji Fourriera i - p}
+\end{figure}
+\newpage
+\begin{figure}
+	\centering
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_q}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.45]{../cw21_output_r}
+	}
+	\caption{Wyniki transformaty Fourriera q - r}
+\end{figure}
+
+Równania sygnałów:
+\begin{figure}[!h]
+	\includegraphics[scale=0.9]{../cw31_polecenie}
+\end{figure}
+
+Różnica fazy nie wpływa na moduł transformaty Fourriera sygnału, zmienia natomiast jej część rzeczywistą co widać wyraźnie w przypadku sygnałów f i h z rysunku 11.
+\par
+Częstotliwość sygnału wyraźnie wpływa na położenie wysokiego prążka w module tranformaty.
+\par
+Transformata sygnalu urojonego (Rysunek 12, g) daje zamienione wartości dla składników rzeczywistego i urojonego w prównaniu dla transformaty analogicznego sygnału rzeczywistego (Rysunek 11, c).
+\newpage
+
+\subsection{Odwrotna DFT}
+{
+\scriptsize
+\begin{verbatim}
+figure
+subplot(211);
+stem(ones(1,8));
+title("transformata");
+subplot(212);
+stem(abs(ifft(ones(1,8))));
+title("transformata odwrotna");
+\end{verbatim}
+}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.6]{../cw22_output}
+	\caption{}
+\end{figure}
+Aby uzyskać sygnał dla którego wszystkie prążki widma będą równe jeden, wystarczy obliczyć transformatę odwrotną takiego wektora.
+\newpage
+
+\section{Rekonstrukcja sygnału z jego transformaty}
+kod użyty do rekonstrukcji:
+\begin{multicols}{3}
+	{
+		\footnotesize
+		\begin{verbatim}
+		a = [0,0,0,0,0,8,0,j*8,0,
+			-j*8,0,8,0,0,0,0];
+		x = ifft(a);
+		x2 = [x,x,x,x,x,x,x,x];
+		a2 = fft(x2);
+		figure
+		subplot(221);
+		stem(real(a));
+		hold on
+		stem(imag(a), 'r');
+		title("transformata sygnalu");
+		subplot(222);
+		stem(x);
+		title("sygnal");
+		subplot(223);
+		stem(x2);
+		title("wydluzony sygnal");
+		subplot(224);
+		stem(real(a2));
+		hold on
+		stem(imag(a2), 'r');
+		title("transformata wydluzonego");
+		\end{verbatim}
+	}
+\end{multicols}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw23_output}
+	\caption{}
+\end{figure}
+Po wprowadzeniu transformaty synału wystarczy obliczyć jej odwrotną transformatę. Po parokrotnym skopiowaniu sygnału wynikowego i obliczeniu kontrolnej transformaty dochodzimy do wniosku, że metoda ta działa.
+\newpage
+
+\subsection{Okna Hamminga, Bartletta i Blackmana}
 
 
 \end{document}
