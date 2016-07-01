@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.6.9)  1 JUL 2016 02:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.6.9)  1 JUL 2016 03:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -509,6 +509,8 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \mult@nat@firstbox=\box50
 \colbreak@box=\box51
 \mc@col@check@num=\count105
+) (./placeins.sty
+Package: placeins 2005/04/18  v 2.2
 )
 (c:/texlive/2016/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/04/23 3.9r The Babel package
@@ -632,19 +634,19 @@ File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
 ) (./PS.aux)
 \openout1 = `PS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 27.
 
 (c:/texlive/2016/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -710,38 +712,38 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 29.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 30.
 
 (c:/texlive/2016/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 29.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 30.
 
 (c:/texlive/2016/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 29.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 30.
 
 
 (c:/texlive/2016/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 29.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 30.
 
 
 (c:/texlive/2016/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 29.
+(Font)              <14.4> on input line 30.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 29.
+(Font)              <10> on input line 30.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 29.
+(Font)              <7> on input line 30.
  [1
 
 {c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 43.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 44.
 
 (c:/texlive/2016/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -749,7 +751,7 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 <../cw03_output.png, id=8, 442.65375pt x 412.54124pt>
 File: ../cw03_output.png Graphic file (type png)
  <use ../cw03_output.png>
-Package pdftex.def Info: ../cw03_output.png used on input line 108.
+Package pdftex.def Info: ../cw03_output.png used on input line 109.
 (pdftex.def)             Requested size: 309.8555pt x 288.7769pt.
 
 [1 <../cw03_output.png>]
@@ -757,77 +759,77 @@ Package pdftex.def Info: ../cw03_output.png used on input line 108.
 File: ../cw04_output.png Graphic file (type png)
 
 <use ../cw04_output.png>
-Package pdftex.def Info: ../cw04_output.png used on input line 144.
+Package pdftex.def Info: ../cw04_output.png used on input line 145.
 (pdftex.def)             Requested size: 204.01169pt x 153.94977pt.
 
 <../cw05_output.png, id=18, 731.73375pt x 432.11438pt>
 File: ../cw05_output.png Graphic file (type png)
 
 <use ../cw05_output.png>
-Package pdftex.def Info: ../cw05_output.png used on input line 194.
+Package pdftex.def Info: ../cw05_output.png used on input line 195.
 (pdftex.def)             Requested size: 365.86598pt x 216.05666pt.
  [2 <../cw04_output.png> <../cw05_output.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 201.
+(Font)              <12> on input line 202.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 201.
+(Font)              <8> on input line 202.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 201.
+(Font)              <6> on input line 202.
 
 <../cw06_output.png, id=24, 578.16pt x 433.62pt>
 File: ../cw06_output.png Graphic file (type png)
  <use ../cw06_output.png>
-Package pdftex.def Info: ../cw06_output.png used on input line 241.
+Package pdftex.def Info: ../cw06_output.png used on input line 242.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 241.
+(Font)              <5> on input line 242.
 
 <../cw06_output_2pi.png, id=25, 578.16pt x 433.62pt>
 File: ../cw06_output_2pi.png Graphic file (type png)
 
 <use ../cw06_output_2pi.png>
-Package pdftex.def Info: ../cw06_output_2pi.png used on input line 245.
+Package pdftex.def Info: ../cw06_output_2pi.png used on input line 246.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
  [3 <../cw06_output.png (PNG copy)> <../cw06_output_2pi.png (PNG copy)>] <../cw
 07_output.png, id=36, 578.16pt x 433.62pt>
 File: ../cw07_output.png Graphic file (type png)
 
 <use ../cw07_output.png>
-Package pdftex.def Info: ../cw07_output.png used on input line 283.
+Package pdftex.def Info: ../cw07_output.png used on input line 284.
 (pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
  [4 <../cw07_output.png (PNG copy)>]
 <../cw11_output.png, id=40, 578.16pt x 433.62pt>
 File: ../cw11_output.png Graphic file (type png)
  <use ../cw11_output.png>
-Package pdftex.def Info: ../cw11_output.png used on input line 324.
+Package pdftex.def Info: ../cw11_output.png used on input line 325.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
 [5 <../cw11_output.png (PNG copy)>]
 <../cw12_output.png, id=44, 578.16pt x 433.62pt>
 File: ../cw12_output.png Graphic file (type png)
  <use ../cw12_output.png>
-Package pdftex.def Info: ../cw12_output.png used on input line 384.
+Package pdftex.def Info: ../cw12_output.png used on input line 385.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
 [6 <../cw12_output.png (PNG copy)>]
 <../cw13_output.png, id=49, 578.16pt x 433.62pt>
 File: ../cw13_output.png Graphic file (type png)
  <use ../cw13_output.png>
-Package pdftex.def Info: ../cw13_output.png used on input line 430.
+Package pdftex.def Info: ../cw13_output.png used on input line 431.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
 [7 <../cw13_output.png (PNG copy)>]
 <../cw14_output.png, id=53, 578.16pt x 433.62pt>
 File: ../cw14_output.png Graphic file (type png)
  <use ../cw14_output.png>
-Package pdftex.def Info: ../cw14_output.png used on input line 475.
+Package pdftex.def Info: ../cw14_output.png used on input line 476.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
 [8 <../cw14_output.png (PNG copy)>]
 <../cw15_output.png, id=57, 578.16pt x 433.62pt>
 File: ../cw15_output.png Graphic file (type png)
  <use ../cw15_output.png>
-Package pdftex.def Info: ../cw15_output.png used on input line 545.
+Package pdftex.def Info: ../cw15_output.png used on input line 546.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
 [9 <../cw15_output.png (PNG copy)>]
@@ -887,142 +889,317 @@ File: ../cw21_output_h.png Graphic file (type png)
 Package pdftex.def Info: ../cw21_output_h.png used on input line 582.
 (pdftex.def)             Requested size: 189.70699pt x 142.28024pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[10] <../cw21_output_i.png, id=72, 421.575pt x 316.18124pt>
+<../cw21_output_i.png, id=69, 421.575pt x 316.18124pt>
 File: ../cw21_output_i.png Graphic file (type png)
 
 <use ../cw21_output_i.png>
-Package pdftex.def Info: ../cw21_output_i.png used on input line 591.
+Package pdftex.def Info: ../cw21_output_i.png used on input line 589.
 (pdftex.def)             Requested size: 189.70699pt x 142.28024pt.
 
-<../cw21_output_j.png, id=73, 421.575pt x 316.18124pt>
+<../cw21_output_j.png, id=70, 421.575pt x 316.18124pt>
 File: ../cw21_output_j.png Graphic file (type png)
 
 <use ../cw21_output_j.png>
-Package pdftex.def Info: ../cw21_output_j.png used on input line 594.
+Package pdftex.def Info: ../cw21_output_j.png used on input line 592.
 (pdftex.def)             Requested size: 189.70699pt x 142.28024pt.
 
-<../cw21_output_k.png, id=74, 421.575pt x 316.18124pt>
+<../cw21_output_k.png, id=71, 421.575pt x 316.18124pt>
 File: ../cw21_output_k.png Graphic file (type png)
 
 <use ../cw21_output_k.png>
-Package pdftex.def Info: ../cw21_output_k.png used on input line 598.
+Package pdftex.def Info: ../cw21_output_k.png used on input line 596.
 (pdftex.def)             Requested size: 189.70699pt x 142.28024pt.
 
-<../cw21_output_l.png, id=75, 421.575pt x 316.18124pt>
+<../cw21_output_l.png, id=72, 421.575pt x 316.18124pt>
 File: ../cw21_output_l.png Graphic file (type png)
 
 <use ../cw21_output_l.png>
-Package pdftex.def Info: ../cw21_output_l.png used on input line 601.
+Package pdftex.def Info: ../cw21_output_l.png used on input line 599.
 (pdftex.def)             Requested size: 189.70699pt x 142.28024pt.
 
-<../cw21_output_m.png, id=76, 421.575pt x 316.18124pt>
+<../cw21_output_m.png, id=73, 421.575pt x 316.18124pt>
 File: ../cw21_output_m.png Graphic file (type png)
 
 <use ../cw21_output_m.png>
-Package pdftex.def Info: ../cw21_output_m.png used on input line 605.
+Package pdftex.def Info: ../cw21_output_m.png used on input line 603.
 (pdftex.def)             Requested size: 189.70699pt x 142.28024pt.
 
-<../cw21_output_n.png, id=77, 421.575pt x 316.18124pt>
+<../cw21_output_n.png, id=74, 421.575pt x 316.18124pt>
 File: ../cw21_output_n.png Graphic file (type png)
 
 <use ../cw21_output_n.png>
-Package pdftex.def Info: ../cw21_output_n.png used on input line 608.
+Package pdftex.def Info: ../cw21_output_n.png used on input line 606.
 (pdftex.def)             Requested size: 189.70699pt x 142.28024pt.
 
-<../cw21_output_o.png, id=78, 421.575pt x 316.18124pt>
+<../cw21_output_o.png, id=75, 421.575pt x 316.18124pt>
 File: ../cw21_output_o.png Graphic file (type png)
 
 <use ../cw21_output_o.png>
-Package pdftex.def Info: ../cw21_output_o.png used on input line 612.
+Package pdftex.def Info: ../cw21_output_o.png used on input line 610.
 (pdftex.def)             Requested size: 189.70699pt x 142.28024pt.
 
-<../cw21_output_p.png, id=79, 421.575pt x 316.18124pt>
+<../cw21_output_p.png, id=76, 421.575pt x 316.18124pt>
 File: ../cw21_output_p.png Graphic file (type png)
 
 <use ../cw21_output_p.png>
-Package pdftex.def Info: ../cw21_output_p.png used on input line 615.
+Package pdftex.def Info: ../cw21_output_p.png used on input line 613.
 (pdftex.def)             Requested size: 189.70699pt x 142.28024pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../cw21_output_q.png, id=80, 421.575pt x 316.18124pt>
+<../cw21_output_q.png, id=77, 421.575pt x 316.18124pt>
 File: ../cw21_output_q.png Graphic file (type png)
 
 <use ../cw21_output_q.png>
-Package pdftex.def Info: ../cw21_output_q.png used on input line 623.
+Package pdftex.def Info: ../cw21_output_q.png used on input line 620.
 (pdftex.def)             Requested size: 189.70699pt x 142.28024pt.
 
-<../cw21_output_r.png, id=81, 421.575pt x 316.18124pt>
+<../cw21_output_r.png, id=78, 421.575pt x 316.18124pt>
 File: ../cw21_output_r.png Graphic file (type png)
 
 <use ../cw21_output_r.png>
-Package pdftex.def Info: ../cw21_output_r.png used on input line 626.
+Package pdftex.def Info: ../cw21_output_r.png used on input line 623.
 (pdftex.def)             Requested size: 189.70699pt x 142.28024pt.
 
-<../cw31_polecenie.png, id=82, 347.04657pt x 258.9675pt>
+<../cw31_polecenie.png, id=79, 347.04657pt x 258.9675pt>
 File: ../cw31_polecenie.png Graphic file (type png)
 
 <use ../cw31_polecenie.png>
-Package pdftex.def Info: ../cw31_polecenie.png used on input line 632.
+Package pdftex.def Info: ../cw31_polecenie.png used on input line 629.
 (pdftex.def)             Requested size: 312.33902pt x 233.06857pt.
+ [10 <../cw31_polecenie.png>] [11 <../cw21_output_a.png (PNG copy)> <../cw21_ou
+tput_b.png (PNG copy)> <../cw21_output_c.png (PNG copy)> <../cw21_output_d.png 
+(PNG copy)> <../cw21_output_e.png (PNG copy)> <../cw21_output_f.png (PNG copy)>
+ <../cw21_output_g.png (PNG copy)> <../cw21_output_h.png (PNG copy)>] [12 <../c
+w21_output_i.png (PNG copy)> <../cw21_output_j.png (PNG copy)> <../cw21_output_
+k.png (PNG copy)> <../cw21_output_l.png (PNG copy)> <../cw21_output_m.png (PNG 
+copy)> <../cw21_output_n.png (PNG copy)> <../cw21_output_o.png (PNG copy)> <../
+cw21_output_p.png (PNG copy)>]
+<../cw22_output.png, id=91, 578.16pt x 433.62pt>
+File: ../cw22_output.png Graphic file (type png)
+ <use ../cw22_output.png>
+Package pdftex.def Info: ../cw22_output.png used on input line 648.
+(pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
+
+[13 <../cw21_output_q.png (PNG copy)> <../cw21_output_r.png (PNG copy)> <../cw2
+2_output.png (PNG copy)>]
+Overfull \hbox (14.44962pt too wide) in paragraph at lines 682--682
+[]\T1/lmtt/m/n/10 title("transformata wydluzonego");[] 
+ []
+
+<../cw23_output.png, id=95, 578.16pt x 433.62pt>
+File: ../cw23_output.png Graphic file (type png)
+ <use ../cw23_output.png>
+Package pdftex.def Info: ../cw23_output.png used on input line 688.
+(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+
+[14 <../cw23_output.png (PNG copy)>]
+<../cw24_output_Hamming.png, id=99, 578.16pt x 433.62pt>
+File: ../cw24_output_Hamming.png Graphic file (type png)
+
+<use ../cw24_output_Hamming.png>
+Package pdftex.def Info: ../cw24_output_Hamming.png used on input line 699.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+<../cw24_output_blackman.png, id=100, 578.16pt x 433.62pt>
+File: ../cw24_output_blackman.png Graphic file (type png)
+
+<use ../cw24_output_blackman.png>
+Package pdftex.def Info: ../cw24_output_blackman.png used on input line 702.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+<../cw24_output_Bartlett.png, id=101, 578.16pt x 433.62pt>
+File: ../cw24_output_Bartlett.png Graphic file (type png)
+
+<use ../cw24_output_Bartlett.png>
+Package pdftex.def Info: ../cw24_output_Bartlett.png used on input line 706.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+ [15 <../cw24_output_Hamming.png (PNG copy)> <../cw24_output_blackman.png (PNG 
+copy)> <../cw24_output_Bartlett.png (PNG copy)>] <../cw25_polecenie.png, id=105
+, 206.27063pt x 63.23625pt>
+File: ../cw25_polecenie.png Graphic file (type png)
+
+<use ../cw25_polecenie.png>
+Package pdftex.def Info: ../cw25_polecenie.png used on input line 715.
+(pdftex.def)             Requested size: 144.38844pt x 44.26506pt.
+
+<../cw25_output_A_Hamming.png, id=106, 578.16pt x 433.62pt>
+File: ../cw25_output_A_Hamming.png Graphic file (type png)
+
+<use ../cw25_output_A_Hamming.png>
+Package pdftex.def Info: ../cw25_output_A_Hamming.png used on input line 791.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+<../cw25_output_A_Bartlett.png, id=107, 578.16pt x 433.62pt>
+File: ../cw25_output_A_Bartlett.png Graphic file (type png)
+
+<use ../cw25_output_A_Bartlett.png>
+Package pdftex.def Info: ../cw25_output_A_Bartlett.png used on input line 794.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+<../cw25_output_B_Bartlett.png, id=108, 578.16pt x 433.62pt>
+File: ../cw25_output_B_Bartlett.png Graphic file (type png)
+
+<use ../cw25_output_B_Bartlett.png>
+Package pdftex.def Info: ../cw25_output_B_Bartlett.png used on input line 804.
+(pdftex.def)             Requested size: 173.44933pt x 130.087pt.
+
+<../cw25_output_B_Blackman.png, id=109, 578.16pt x 433.62pt>
+File: ../cw25_output_B_Blackman.png Graphic file (type png)
+
+<use ../cw25_output_B_Blackman.png>
+Package pdftex.def Info: ../cw25_output_B_Blackman.png used on input line 807.
+(pdftex.def)             Requested size: 173.44933pt x 130.087pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11 <../cw21_output_a.png (PNG copy)> <../cw21_output_b.png (PNG copy)> <../cw2
-1_output_c.png (PNG copy)> <../cw21_output_d.png (PNG copy)> <../cw21_output_e.
-png (PNG copy)> <../cw21_output_f.png (PNG copy)> <../cw21_output_g.png (PNG co
-py)> <../cw21_output_h.png (PNG copy)>] [12 <../cw21_output_i.png (PNG copy)> <
-../cw21_output_j.png (PNG copy)> <../cw21_output_k.png (PNG copy)> <../cw21_out
-put_l.png (PNG copy)> <../cw21_output_m.png (PNG copy)> <../cw21_output_n.png (
-PNG copy)> <../cw21_output_o.png (PNG copy)> <../cw21_output_p.png (PNG copy)>]
-[13 <../cw21_output_q.png (PNG copy)> <../cw21_output_r.png (PNG copy)> <../cw3
-1_polecenie.png>] <../cw22_output.png, id=94, 578.16pt x 433.62pt>
-File: ../cw22_output.png Graphic file (type png)
+[16 <../cw25_polecenie.png> <../cw25_output_A_Hamming.png (PNG copy)> <../cw25_
+output_A_Bartlett.png (PNG copy)>]
+<../cw25_output_D_Hamming.png, id=114, 578.16pt x 433.62pt>
+File: ../cw25_output_D_Hamming.png Graphic file (type png)
 
-<use ../cw22_output.png>
-Package pdftex.def Info: ../cw22_output.png used on input line 657.
-(pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
- [14 <../cw22_output.png (PNG copy)>]
-Overfull \hbox (14.44962pt too wide) in paragraph at lines 691--691
-[]\T1/lmtt/m/n/10 title("transformata wydluzonego");[] 
+<use ../cw25_output_D_Hamming.png>
+Package pdftex.def Info: ../cw25_output_D_Hamming.png used on input line 818.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+<../cw25_output_D_Bartlett.png, id=115, 578.16pt x 433.62pt>
+File: ../cw25_output_D_Bartlett.png Graphic file (type png)
+
+<use ../cw25_output_D_Bartlett.png>
+Package pdftex.def Info: ../cw25_output_D_Bartlett.png used on input line 821.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+File: ../cw25_output_D_Bartlett.png Graphic file (type png)
+ <use ../cw25_output_D_Bartlett.png>
+Package pdftex.def Info: ../cw25_output_D_Bartlett.png used on input line 825.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+[17 <../cw25_output_B_Bartlett.png (PNG copy)> <../cw25_output_B_Blackman.png (
+PNG copy)> <../cw25_output_D_Hamming.png (PNG copy)> <../cw25_output_D_Bartlett
+.png (PNG copy)>] <../cw31_output_17_Hamming.png, id=119, 578.16pt x 433.62pt>
+File: ../cw31_output_17_Hamming.png Graphic file (type png)
+
+<use ../cw31_output_17_Hamming.png>
+Package pdftex.def Info: ../cw31_output_17_Hamming.png used on input line 878.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+<../cw31_output_17_Bartlett.png, id=120, 578.16pt x 433.62pt>
+File: ../cw31_output_17_Bartlett.png Graphic file (type png)
+
+<use ../cw31_output_17_Bartlett.png>
+Package pdftex.def Info: ../cw31_output_17_Bartlett.png used on input line 881.
+
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+<../cw31_output_17_Blackman.png, id=121, 578.16pt x 433.62pt>
+File: ../cw31_output_17_Blackman.png Graphic file (type png)
+
+<use ../cw31_output_17_Blackman.png>
+Package pdftex.def Info: ../cw31_output_17_Blackman.png used on input line 885.
+
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+ [18 <../cw31_output_17_Hamming.png (PNG copy)> <../cw31_output_17_Bartlett.png
+ (PNG copy)> <../cw31_output_17_Blackman.png (PNG copy)>]
+<../cw31_output_kwadrat_Blackman_plot.png, id=126, 578.16pt x 433.62pt>
+File: ../cw31_output_kwadrat_Blackman_plot.png Graphic file (type png)
+
+<use ../cw31_output_kwadrat_Blackman_plot.png>
+Package pdftex.def Info: ../cw31_output_kwadrat_Blackman_plot.png used on input
+ line 892.
+(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+ [19 <../cw31_output_kwadrat_Blackman_plot.png (PNG copy)>]
+Overfull \hbox (43.13612pt too wide) in paragraph at lines 924--924
+[]\T1/lmtt/m/n/6 h = (wg/pi)*sinc(wg*n/pi).*sin(2*pi*6000*t); %odpowiedz impuls
+owa[] 
  []
 
-<../cw23_output.png, id=98, 578.16pt x 433.62pt>
-File: ../cw23_output.png Graphic file (type png)
- <use ../cw23_output.png>
-Package pdftex.def Info: ../cw23_output.png used on input line 697.
-(pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+<../cw32_output_Hamming.png, id=130, 578.16pt x 433.62pt>
+File: ../cw32_output_Hamming.png Graphic file (type png)
 
-[15 <../cw23_output.png (PNG copy)>] [16] (./PS.aux) ) 
+<use ../cw32_output_Hamming.png>
+Package pdftex.def Info: ../cw32_output_Hamming.png used on input line 932.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+<../cw32_output_Bartlett.png, id=131, 578.16pt x 433.62pt>
+File: ../cw32_output_Bartlett.png Graphic file (type png)
+
+<use ../cw32_output_Bartlett.png>
+Package pdftex.def Info: ../cw32_output_Bartlett.png used on input line 935.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+<../cw32_output_Blackman.png, id=132, 578.16pt x 433.62pt>
+File: ../cw32_output_Blackman.png Graphic file (type png)
+
+<use ../cw32_output_Blackman.png>
+Package pdftex.def Info: ../cw32_output_Blackman.png used on input line 939.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+ [20 <../cw32_output_Hamming.png (PNG copy)> <../cw32_output_Bartlett.png (PNG 
+copy)> <../cw32_output_Blackman.png (PNG copy)>]
+Package epstopdf Info: Source file: <../cw33_output.eps>
+(epstopdf)                    date: 2016-06-30 00:22:59
+(epstopdf)                    size: 43144 bytes
+(epstopdf)             Output file: <../cw33_output-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 03:18:04
+(epstopdf)                    size: 11779 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw33_output-eps-converte
+d-to.pdf ../cw33_output.eps>
+(epstopdf)             \includegraphics on input line 960.
+Package epstopdf Info: Output file is already uptodate.
+ <../cw33_output-eps-converted-to.pdf, id=136, 421.575pt x 317.185pt>
+File: ../cw33_output-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw33_output-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw33_output-eps-converted-to.pdf used on input line
+ 960.
+(pdftex.def)             Requested size: 295.10048pt x 222.02797pt.
+ [21 <../cw33_output-eps-converted-to.pdf>] <../cw34_polecenie.png, id=145, 502
+.87875pt x 187.45032pt>
+File: ../cw34_polecenie.png Graphic file (type png)
+
+<use ../cw34_polecenie.png>
+Package pdftex.def Info: ../cw34_polecenie.png used on input line 969.
+(pdftex.def)             Requested size: 251.43875pt x 93.72491pt.
+Package epstopdf Info: Source file: <../cw34_output.eps>
+(epstopdf)                    date: 2016-06-30 00:44:56
+(epstopdf)                    size: 189831 bytes
+(epstopdf)             Output file: <../cw34_output-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-07-01 03:22:05
+(epstopdf)                    size: 16452 bytes
+(epstopdf)             Command: <epstopdf --outfile=../cw34_output-eps-converte
+d-to.pdf ../cw34_output.eps>
+(epstopdf)             \includegraphics on input line 989.
+Package epstopdf Info: Output file is already uptodate.
+
+<../cw34_output-eps-converted-to.pdf, id=146, 421.575pt x 317.185pt>
+File: ../cw34_output-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../cw34_output-eps-converted-to.pdf>
+Package pdftex.def Info: ../cw34_output-eps-converted-to.pdf used on input line
+ 989.
+(pdftex.def)             Requested size: 295.10048pt x 222.02797pt.
+ [22 <../cw34_polecenie.png> <../cw34_output-eps-converted-to.pdf>] [23] (./PS.
+aux) ) 
 Here is how much of TeX's memory you used:
- 5509 strings out of 493014
- 82566 string characters out of 6137002
- 159656 words of memory out of 5000000
- 8899 multiletter control sequences out of 15000+600000
+ 5636 strings out of 493014
+ 85950 string characters out of 6137002
+ 160737 words of memory out of 5000000
+ 8991 multiletter control sequences out of 15000+600000
  64384 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,10n,49p,730b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2016/texmf-di
-st/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2016/texmf-dist/fonts/enc/dvips
-/lm/lm-mathit.enc}{c:/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/
-texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/texlive/2016/texmf-dis
-t/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/publ
-ic/lm/lmmi10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><
-c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2016/tex
-mf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1
-/public/lm/lmr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr17.pf
-b><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2016
-/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2016/texmf-dist/fonts/
-type1/public/lm/lmtt8.pfb>
-Output written on PS.pdf (17 pages, 1226178 bytes).
+{c:/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/
+2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2016/texmf-dist/fo
+nts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec
+.enc}<c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2
+016/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2016/texmf-dist/fon
+ts/type1/public/lm/lmmi12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm
+/lmmi8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texl
+ive/2016/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2016/texmf-dist
+/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public
+/lm/lmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:
+/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
+Output written on PS.pdf (24 pages, 2331840 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 207 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 261 words of extra memory for PDF output out of 10000 (max. 10000000)
 

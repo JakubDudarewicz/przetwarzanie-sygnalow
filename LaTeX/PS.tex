@@ -8,6 +8,7 @@
 \usepackage{epstopdf}
 \usepackage{subfig} 
 \usepackage{multicol}
+\usepackage{placeins}
 %\usepackage{float} - bez tego można ustawić 2 obrazki obok siebie
 
 \usepackage[polish]{babel}
@@ -549,9 +550,8 @@ Z wybranych algorytmów najbliżej oryginalnego jest przybliżenie za pomocą fu
 \newpage
 
 \section{Transformata Fourriera}
-
 \subsection{Podstawy DFT} 
-\begin{figure}[!h]
+\begin{figure}
 	\centering
 	\subfloat[]{
 		\includegraphics[scale=0.45]{../cw21_output_a}
@@ -582,9 +582,7 @@ Z wybranych algorytmów najbliżej oryginalnego jest przybliżenie za pomocą fu
 	}
 	\caption{Wyniki transformacji fourriera a - h}
 \end{figure}
-\newpage
-\begin{figure}[!h]
-	
+\begin{figure}
 	\centering
 	\subfloat[]{
 		\includegraphics[scale=0.45]{../cw21_output_i}
@@ -615,7 +613,6 @@ Z wybranych algorytmów najbliżej oryginalnego jest przybliżenie za pomocą fu
 	}
 	\caption{Wyniki transfpormacji Fourriera i - p}
 \end{figure}
-\newpage
 \begin{figure}
 	\centering
 	\subfloat[]{
@@ -627,18 +624,12 @@ Z wybranych algorytmów najbliżej oryginalnego jest przybliżenie za pomocą fu
 	\caption{Wyniki transformaty Fourriera q - r}
 \end{figure}
 
-Równania sygnałów:
-\begin{figure}[!h]
-	\includegraphics[scale=0.9]{../cw31_polecenie}
-\end{figure}
+Równania sygnałów:\\
+\nolinebreak[4]
+\includegraphics[scale=0.9]{../cw31_polecenie}\\
+Różnica fazy nie wpływa na moduł transformaty Fourriera sygnału, zmienia natomiast jej część rzeczywistą co widać wyraźnie w przypadku sygnałów f i h z rysunku 11.Częstotliwość sygnału wyraźnie wpływa na położenie wysokiego prążka w module tranformaty.Transformata sygnalu urojonego (Rysunek 12, g) daje zamienione wartości dla składników rzeczywistego i urojonego w prównaniu dla transformaty analogicznego sygnału rzeczywistego (Rysunek 11, c).
 
-Różnica fazy nie wpływa na moduł transformaty Fourriera sygnału, zmienia natomiast jej część rzeczywistą co widać wyraźnie w przypadku sygnałów f i h z rysunku 11.
-\par
-Częstotliwość sygnału wyraźnie wpływa na położenie wysokiego prążka w module tranformaty.
-\par
-Transformata sygnalu urojonego (Rysunek 12, g) daje zamienione wartości dla składników rzeczywistego i urojonego w prównaniu dla transformaty analogicznego sygnału rzeczywistego (Rysunek 11, c).
 \newpage
-
 \subsection{Odwrotna DFT}
 {
 \scriptsize
@@ -660,7 +651,7 @@ title("transformata odwrotna");
 Aby uzyskać sygnał dla którego wszystkie prążki widma będą równe jeden, wystarczy obliczyć transformatę odwrotną takiego wektora.
 \newpage
 
-\section{Rekonstrukcja sygnału z jego transformaty}
+\subsection{Rekonstrukcja sygnału z jego transformaty}
 kod użyty do rekonstrukcji:
 \begin{multicols}{3}
 	{
@@ -701,6 +692,307 @@ Po wprowadzeniu transformaty synału wystarczy obliczyć jej odwrotną transform
 \newpage
 
 \subsection{Okna Hamminga, Bartletta i Blackmana}
+\begin{figure}[!h]
+	\centering
+	\subfloat[]{
+		\includegraphics[scale=0.4]{../cw24_output_Hamming}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.4]{../cw24_output_blackman}
+	}
+	\par
+	\subfloat[]{
+		\includegraphics[scale=0.4]{../cw24_output_Bartlett}
+	}
+	\caption{Kształty okien i ich widma}
+\end{figure}
+Okno Bartletta jest na pierwszy rzut oka najprostsze i wydaje się być najmniej przydatne z powyższych okien. Najbardziej równomierne widmo ma natomiast okno Hamminga i wydaje się być najbardziej użyteczne.
+\newpage
+
+\subsection{Uzycie okien do obserwacji widm przebiegów}
+Obserwowane sygnały:
+\begin{figure}[!h]
+	\includegraphics[scale=0.7]{../cw25_polecenie}
+\end{figure}
+Skrypt użyty do generacji przebiegów:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		%sampling frequency
+		fs=16000;
+		
+		%samples vector
+		n=[0:127];
+		
+		%time vectors
+		t=n/fs;
+		
+		%signal model
+		xa=sin(2*pi*4000*t)+sin(2*pi*4125*t);
+		xb=sin(2*pi*4000*t)+sin(2*pi*4250*t);
+		xc=sin(2*pi*4000*t)+sin(2*pi*4500*t);
+		xd=sin(2*pi*4062*t);
+		
+		%windows
+		ham = rot90(hamming(128));
+		bla = rot90(blackman(128));
+		bar = rot90(bartlett(128));
+		
+		figure
+		subplot(231);
+		stem(xd);
+		title("sygnal wejsciowy");
+		subplot(234);
+		stem(xd.*ham);
+		title("sygnal wejsciowy po oknie Hamminga");
+		subplot(2,3,[2,3]);
+		stem(abs(fft(xd)));
+		title("widmo sygnalu");
+		subplot(2,3,[5,6]);
+		stem(abs(fft(xd.*ham)));
+		title("widmo sygnalu po oknie Hamminga");
+		
+		figure
+		subplot(231);
+		stem(xd);
+		title("sygnal wejsciowy");
+		subplot(234);
+		stem(xd.*bla);
+		title("sygnal wejsciowy po oknie Blackmana");
+		subplot(2,3,[2,3]);
+		stem(abs(fft(xd)));
+		title("widmo sygnalu");
+		subplot(2,3,[5,6]);
+		stem(abs(fft(xd.*bla)));
+		title("widmo sygnalu po oknie Blackmana");
+		
+		figure
+		subplot(231);
+		stem(xd);
+		title("sygnal wejsciowy");
+		subplot(234);
+		stem(xd.*bar);
+		title("sygnal wejsciowy po oknie Bartletta");
+		subplot(2,3,[2,3]);
+		stem(abs(fft(xd)));
+		title("widmo sygnalu");
+		subplot(2,3,[5,6]);
+		stem(abs(fft(xd.*bar)));
+		title("widmo sygnalu po oknie Bartletta");
+		\end{verbatim}
+	}
+\end{multicols}
+
+\begin{figure}[!h]
+	\centering
+	\subfloat[]{
+		\includegraphics[scale=0.4]{../cw25_output_A_Hamming}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.4]{../cw25_output_A_Bartlett}
+	}
+	\caption{Obserwacja sygnału A przez okna Hamminga i Bartletta}
+\end{figure}
+
+Widoczna jest większa przydatność okna Hamminga, gdyż okno Bartletta wprowadza zbyt duże zniekształcenia.
+
+\begin{figure}[!h]
+	\centering
+	\subfloat[]{
+		\includegraphics[scale=0.3]{../cw25_output_B_Bartlett}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.3]{../cw25_output_B_Blackman}
+	}
+	\caption{Obserwacja sygnału B przez okna Bartletta i Blackmana}
+\end{figure}
+
+Zarówno okno Bartletta i Blackmana wprowadzają zauważalne zniekształcenia sygnału, lecz okno Blackmana jest odrobinę lepsze pod tym względem.
+\newpage
+
+\begin{figure}[!h]
+	\centering
+	\subfloat[]{
+		\includegraphics[scale=0.4]{../cw25_output_D_Hamming}
+	}
+	\subfloat[]{
+		\includegraphics[scale=0.4]{../cw25_output_D_Bartlett}
+	}
+	\par
+	\subfloat[]{
+		\includegraphics[scale=0.4]{../cw25_output_D_Bartlett}
+	}
+	\caption{Obserwacja sygnału D przez okna Hamminga, Bartletta i Blackmana}
+\end{figure}
+Dla poprzednich sygnałów nie występował przeciek widma ze względu na częstotliwości sygnałóW dopasowane do częstotliwości próbkowania. Okna skutkowały wtedy tylko wprowadzeniem zniekształceń. W przypadku sygnału D występuje duży przeciek i okna mogą mu zapobiec. Tak jak przewidywałem, okno Hamminga okazuje się być najbardziej przydatne
+\par
+Jak widać, okna moga wprowadzać niepożądane czestotliwości i czynić pomiar mniej dokładnym. W większości przypadków jednak okażą się bardzo pomocne.
+\newpage
+
+\section{Filtry SOI}
+\subsection{Filtr dolnoprzepustowy}
+Skrypt użyty do projektowania filtru i przefiltrowania sygnału kwadratowego:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		n = [-16:16]; %rzad filtru
+		
+		ft = 5500; %czestotliwosc graniczna
+		fs = 16000;
+		
+		wg = 2*pi*ft/fs;
+		h = (wg/pi)*sinc(wg*n/pi); %odpowiedz impulsowa
+		w = blackman(33)';
+		hw = h.*w;
+		freqz(hw,1,512,fs);
+		
+		%samples vector
+		na=[0:127];
+		
+		%signal frequency
+		f=500;
+		
+		%time vectors
+		t=na/fs;
+		
+		%signal model
+		a=sin(2*pi*f*t);
+		xa=sign(a);
+		
+		xf = filter2(hw, xa);
+		
+		figure
+		subplot(211)
+		plot(xa)
+		subplot(212)
+		plot(xf)
+		\end{verbatim}
+	}
+\end{multicols}
+\begin{figure}[!h]
+	\centering
+	\subfloat[Okno Hamminga]{
+		\includegraphics[scale=0.4]{../cw31_output_17_Hamming}
+	}
+	\subfloat[Okno Bartletta]{
+		\includegraphics[scale=0.4]{../cw31_output_17_Bartlett}
+	}
+	\par
+	\subfloat[okno Blackmana]{
+		\includegraphics[scale=0.4]{../cw31_output_17_Blackman}
+	}
+	\caption{Charakterystyki projektowanych filtrów rzędu 17}
+\end{figure}
+W przypadku filtru 17 rzędu okno Blackmana zapewnia największe tłumienie w paśmie zaporowym poniżej -80 dB ze stosunkowo niewielką amplitudą listków bocznych w porównaniu do okna Hamminga. Okno Bartleta ma najmniejszą amplitudę listków bocznych, alecz również niewielkie tłumienie.
+\newpage
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw31_output_kwadrat_Blackman_plot}
+	\caption{Przebieg kwadratowy i wynik filtrowania dolnoprzepustowego z oknem Blackmana}
+\end{figure}
+Wybrałem okno Blackmana ponieważ daje ono niską amplitudę listków bocznych. Aby uzyskać wymagane 70 dB tłumienia w paśmie zaporowym zwiększyłem rząd filtru z 17 do 33.
+\newpage
+
+\subsection{Filtr pasmowo-przepustowy}
+Skrypt użyty do projektowania filtru:
+\begin{multicols}{3}
+	{
+		\tiny
+		\begin{verbatim}
+		n = [-16:16]; %rzad filtru
+		
+		ft = 6000; %czestotliwosc graniczna
+		fs = 44000;
+		t=n/fs;
+		
+		wg = 2*pi*ft/fs;
+		h = (wg/pi)*sinc(wg*n/pi).*sin(2*pi*6000*t); %odpowiedz impulsowa
+		w = hamming(33)';
+		hw = h.*w;
+		freqz(hw,1,512,fs);
+		
+		%samples vector
+		na=[0:511];
+		
+		%signal frequency
+		f=500;
+		
+		%time vectors
+		ta=na/fs;
+		\end{verbatim}
+	}
+\end{multicols}
+
+\begin{figure}[!h]
+	\centering
+	\subfloat[Okno Hamminga]{
+		\includegraphics[scale=0.4]{../cw32_output_Hamming}
+	}
+	\subfloat[Okno Bartletta]{
+		\includegraphics[scale=0.4]{../cw32_output_Bartlett}
+	}
+	\par
+	\subfloat[okno Blackmana]{
+		\includegraphics[scale=0.4]{../cw32_output_Blackman}
+	}
+	\caption{Charakterystyki projektowanych filtrów rzędu 33}
+\end{figure}
+Tak jak w poprzednim punkcie, Okno Bartletta charakteryzuje się najkorzystniejszą charakterystyką fazową i małą amplituda listków bocznych. Okna Hamminga i Blackmana dają za to większe tłumienie w paśmie zaporowym.
+\newpage
+
+\subsection{Filtr górnoprzepustowy}
+Skrypt użyty do projektowania filtru:
+{
+	\tiny
+	\begin{verbatim}
+	n=120;
+	ft = 600 /8000;
+	w=blackman(n+1); %funkcja okna
+	h=fir1(n, ft, 'high', w);
+	H = fft(h);
+	freqz(h,1,512,16000)
+	\end{verbatim}
+}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw33_output}
+	\caption{Filtr górnoprzepustowy}
+\end{figure}
+Powyższy filtr został wykonany w Matlabie. Poprzednie zadania wykonywane były w Octave. Zostałem zmuszony do przesiadki przez słabe wsparcie Octave dla DSP.
+\newpage
+
+\subsection{Filtr schodkowy dolnoprzepustowy}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.5]{../cw34_polecenie}
+	\caption{Zadany kształt charakterystyki filtru}
+\end{figure}
+Skrypt użyty do projektowania filtru:
+{
+	\tiny
+	\begin{verbatim}
+	n=200;
+	fs=48000;
+	ft1 = 100*(2/fs);
+	ft2 = 16000*(2/fs);
+	w=bartlett(n+1);
+	h1=impz(fir1(n, ft1, 'low', w));
+	h2=impz(fir1(n, ft2, 'low', w));
+	h=(h1+h2)/2;
+	freqz(h)
+	\end{verbatim}
+}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{../cw34_output}
+	\caption{Charakterystyka zaprojektowanego filtru}
+\end{figure}
+Aby sprostać wymaganiom zadania zwiększyłem rząd filtru do 200.
+\newpage
+
+\section{Filtry NOI}
 
 
 \end{document}
